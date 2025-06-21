@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDF Viewer & Annotator</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>PDF Viewer & Annotator</h1>
+    <button id="dark-mode-toggle">🌙 Dark Mode</button>
+
+  </header>
+
+  <section id="upload-area">
+    <input type="file" id="pdf-upload" accept="application/pdf" />
+  </section>
+
+  <div id="controls">
+    <button id="prev-page">Previous</button>
+    <button id="next-page">Next</button>
+    <button id="zoom-in">Zoom In</button>
+    <button id="zoom-out">Zoom Out</button>
+    <span id="page-number">0 / 0</span>
+    <button id="undo-btn">Undo</button>
+    <button id="redo-btn">Redo</button>
+
+  </div>
+
+  <section id="viewer-container">
+    <canvas id="pdf-canvas"></canvas>
+    <div id="annotation-layer"></div>
+  </section>
+
+  <section id="toolbar">
+    <button id="save-btn">Save</button>
+    <button id="load-btn">Load</button>
+  </section>
+
+  <footer>
+    <p>© 2025 Made by Anushtha Sharma</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
